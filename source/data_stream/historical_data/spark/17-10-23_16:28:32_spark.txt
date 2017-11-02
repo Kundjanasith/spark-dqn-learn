@@ -1,0 +1,394 @@
+17/10/23 16:28:32 INFO SparkContext: Running Spark version 2.2.0
+17/10/23 16:28:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/23 16:28:32 INFO SparkContext: Submitted application: W2V
+17/10/23 16:28:32 INFO SecurityManager: Changing view acls to: centos
+17/10/23 16:28:32 INFO SecurityManager: Changing modify acls to: centos
+17/10/23 16:28:32 INFO SecurityManager: Changing view acls groups to: 
+17/10/23 16:28:32 INFO SecurityManager: Changing modify acls groups to: 
+17/10/23 16:28:32 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(centos); groups with view permissions: Set(); users  with modify permissions: Set(centos); groups with modify permissions: Set()
+17/10/23 16:28:33 INFO Utils: Successfully started service 'sparkDriver' on port 42795.
+17/10/23 16:28:33 INFO SparkEnv: Registering MapOutputTracker
+17/10/23 16:28:33 INFO SparkEnv: Registering BlockManagerMaster
+17/10/23 16:28:33 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/10/23 16:28:33 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/10/23 16:28:33 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-8d4199ac-17e2-43e8-a346-5dae3f3f72f0
+17/10/23 16:28:33 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+17/10/23 16:28:33 INFO SparkEnv: Registering OutputCommitCoordinator
+17/10/23 16:28:33 INFO log: Logging initialized @1446ms
+17/10/23 16:28:33 INFO Server: jetty-9.3.z-SNAPSHOT
+17/10/23 16:28:33 INFO Server: Started @1506ms
+17/10/23 16:28:33 INFO AbstractConnector: Started ServerConnector@6d6bc158{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+17/10/23 16:28:33 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@41200e0c{/jobs,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@62da83ed{/jobs/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@37d80fe7{/jobs/job,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@71e9a896{/jobs/job/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@408b35bf{/stages,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@15bcf458{/stages/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@43c67247{/stages/stage,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@14bb2297{/stages/stage/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@797501a{/stages/pool,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@57f791c6{/stages/pool/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6c4f9535{/storage,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@30c31dd7{/storage/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@596df867{/storage/rdd,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@241a53ef{/storage/rdd/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2db2cd5{/environment,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@615f972{/environment/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@73393584{/executors,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1827a871{/executors/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7249dadf{/executors/threadDump,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@66238be2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@200606de{/static,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@473b3b7a{/,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@77b7ffa4{/api,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7dac3fd8{/jobs/job/kill,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2102a4d5{/stages/stage/kill,null,AVAILABLE,@Spark}
+17/10/23 16:28:33 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.0.0.14:4040
+17/10/23 16:28:33 INFO SparkContext: Added JAR file:/home/centos/kjzth/sparksample/target/scala-2.10/spark-sample_2.10-1.0.jar at spark://10.0.0.14:42795/jars/spark-sample_2.10-1.0.jar with timestamp 1508750913440
+17/10/23 16:28:33 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://ssw2-ssw-master-0.novalocal:7077...
+17/10/23 16:28:33 INFO TransportClientFactory: Successfully created connection to ssw2-ssw-master-0.novalocal/10.0.0.14:7077 after 23 ms (0 ms spent in bootstraps)
+17/10/23 16:28:33 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20171023162833-0182
+17/10/23 16:28:33 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171023162833-0182/0 on worker-20170828162130-10.0.0.27-45352 (10.0.0.27:45352) with 4 cores
+17/10/23 16:28:33 INFO StandaloneSchedulerBackend: Granted executor ID app-20171023162833-0182/0 on hostPort 10.0.0.27:45352 with 4 cores, 6.6 GB RAM
+17/10/23 16:28:33 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171023162833-0182/1 on worker-20170828162130-10.0.0.26-46436 (10.0.0.26:46436) with 4 cores
+17/10/23 16:28:33 INFO StandaloneSchedulerBackend: Granted executor ID app-20171023162833-0182/1 on hostPort 10.0.0.26:46436 with 4 cores, 6.6 GB RAM
+17/10/23 16:28:33 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40994.
+17/10/23 16:28:33 INFO NettyBlockTransferService: Server created on 10.0.0.14:40994
+17/10/23 16:28:33 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/10/23 16:28:33 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.0.14, 40994, None)
+17/10/23 16:28:33 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.14:40994 with 366.3 MB RAM, BlockManagerId(driver, 10.0.0.14, 40994, None)
+17/10/23 16:28:33 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.0.14, 40994, None)
+17/10/23 16:28:33 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171023162833-0182/1 is now RUNNING
+17/10/23 16:28:33 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.0.14, 40994, None)
+17/10/23 16:28:33 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171023162833-0182/0 is now RUNNING
+17/10/23 16:28:33 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@14bae047{/metrics/json,null,AVAILABLE,@Spark}
+17/10/23 16:28:34 INFO EventLoggingListener: Logging events to hdfs:///tmp/spark-events/app-20171023162833-0182
+17/10/23 16:28:34 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+17/10/23 16:28:34 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 238.5 KB, free 366.1 MB)
+17/10/23 16:28:34 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.1 KB, free 366.0 MB)
+17/10/23 16:28:34 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.14:40994 (size: 23.1 KB, free: 366.3 MB)
+17/10/23 16:28:34 INFO SparkContext: Created broadcast 0 from textFile at W2V1.scala:7
+17/10/23 16:28:35 INFO FileInputFormat: Total input paths to process : 1
+17/10/23 16:28:35 INFO SparkContext: Starting job: collect at Word2Vec.scala:196
+17/10/23 16:28:35 INFO DAGScheduler: Registering RDD 4 (map at Word2Vec.scala:187)
+17/10/23 16:28:35 INFO DAGScheduler: Got job 0 (collect at Word2Vec.scala:196) with 4 output partitions
+17/10/23 16:28:35 INFO DAGScheduler: Final stage: ResultStage 1 (collect at Word2Vec.scala:196)
+17/10/23 16:28:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+17/10/23 16:28:35 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+17/10/23 16:28:35 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[4] at map at Word2Vec.scala:187), which has no missing parents
+17/10/23 16:28:35 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.9 KB, free 366.0 MB)
+17/10/23 16:28:35 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.8 KB, free 366.0 MB)
+17/10/23 16:28:35 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.14:40994 (size: 2.8 KB, free: 366.3 MB)
+17/10/23 16:28:35 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:28:35 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[4] at map at Word2Vec.scala:187) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+17/10/23 16:28:35 INFO TaskSchedulerImpl: Adding task set 0.0 with 4 tasks
+17/10/23 16:28:35 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.26:45394) with ID 1
+17/10/23 16:28:35 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.0.0.26, executor 1, partition 0, ANY, 4869 bytes)
+17/10/23 16:28:35 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.0.0.26, executor 1, partition 1, ANY, 4869 bytes)
+17/10/23 16:28:35 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, 10.0.0.26, executor 1, partition 2, ANY, 4869 bytes)
+17/10/23 16:28:35 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, 10.0.0.26, executor 1, partition 3, ANY, 4869 bytes)
+17/10/23 16:28:35 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.27:55606) with ID 0
+17/10/23 16:28:35 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.26:42149 with 3.4 GB RAM, BlockManagerId(1, 10.0.0.26, 42149, None)
+17/10/23 16:28:35 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.27:36927 with 3.4 GB RAM, BlockManagerId(0, 10.0.0.27, 36927, None)
+17/10/23 16:28:36 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.26:42149 (size: 2.8 KB, free: 3.4 GB)
+17/10/23 16:28:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.26:42149 (size: 23.1 KB, free: 3.4 GB)
+17/10/23 16:28:42 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 6803 ms on 10.0.0.26 (executor 1) (1/4)
+17/10/23 16:28:44 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 8519 ms on 10.0.0.26 (executor 1) (2/4)
+17/10/23 16:28:44 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 8629 ms on 10.0.0.26 (executor 1) (3/4)
+17/10/23 16:28:44 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 8662 ms on 10.0.0.26 (executor 1) (4/4)
+17/10/23 16:28:44 INFO DAGScheduler: ShuffleMapStage 0 (map at Word2Vec.scala:187) finished in 9.104 s
+17/10/23 16:28:44 INFO DAGScheduler: looking for newly runnable stages
+17/10/23 16:28:44 INFO DAGScheduler: running: Set()
+17/10/23 16:28:44 INFO DAGScheduler: waiting: Set(ResultStage 1)
+17/10/23 16:28:44 INFO DAGScheduler: failed: Set()
+17/10/23 16:28:44 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/10/23 16:28:44 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[7] at map at Word2Vec.scala:190), which has no missing parents
+17/10/23 16:28:44 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.8 KB, free 366.0 MB)
+17/10/23 16:28:44 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.6 KB, free 366.0 MB)
+17/10/23 16:28:44 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.14:40994 (size: 2.6 KB, free: 366.3 MB)
+17/10/23 16:28:44 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:28:44 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at map at Word2Vec.scala:190) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+17/10/23 16:28:44 INFO TaskSchedulerImpl: Adding task set 1.0 with 4 tasks
+17/10/23 16:28:44 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 4, 10.0.0.26, executor 1, partition 0, NODE_LOCAL, 4625 bytes)
+17/10/23 16:28:44 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 5, 10.0.0.26, executor 1, partition 1, NODE_LOCAL, 4625 bytes)
+17/10/23 16:28:44 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 6, 10.0.0.26, executor 1, partition 2, NODE_LOCAL, 4625 bytes)
+17/10/23 16:28:44 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 7, 10.0.0.26, executor 1, partition 3, NODE_LOCAL, 4625 bytes)
+17/10/23 16:28:44 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.26:42149 (size: 2.6 KB, free: 3.4 GB)
+17/10/23 16:28:44 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.26:45394
+17/10/23 16:28:44 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 154 bytes
+17/10/23 16:28:46 INFO BlockManagerInfo: Added taskresult_4 in memory on 10.0.0.26:42149 (size: 4.3 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO TransportClientFactory: Successfully created connection to /10.0.0.26:42149 after 5 ms (0 ms spent in bootstraps)
+17/10/23 16:28:46 INFO BlockManagerInfo: Added taskresult_6 in memory on 10.0.0.26:42149 (size: 4.3 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO BlockManagerInfo: Added taskresult_7 in memory on 10.0.0.26:42149 (size: 4.3 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO BlockManagerInfo: Added taskresult_5 in memory on 10.0.0.26:42149 (size: 4.2 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 4) in 2089 ms on 10.0.0.26 (executor 1) (1/4)
+17/10/23 16:28:46 INFO BlockManagerInfo: Removed taskresult_4 on 10.0.0.26:42149 in memory (size: 4.3 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.26:42149 in memory (size: 2.8 KB, free: 3.3 GB)
+17/10/23 16:28:46 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 6) in 2268 ms on 10.0.0.26 (executor 1) (2/4)
+17/10/23 16:28:46 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.14:40994 in memory (size: 2.8 KB, free: 366.3 MB)
+17/10/23 16:28:46 INFO BlockManagerInfo: Removed taskresult_6 on 10.0.0.26:42149 in memory (size: 4.3 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 7) in 2337 ms on 10.0.0.26 (executor 1) (3/4)
+17/10/23 16:28:46 INFO BlockManagerInfo: Removed taskresult_7 on 10.0.0.26:42149 in memory (size: 4.3 MB, free: 3.3 GB)
+17/10/23 16:28:46 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 5) in 2363 ms on 10.0.0.26 (executor 1) (4/4)
+17/10/23 16:28:46 INFO DAGScheduler: ResultStage 1 (collect at Word2Vec.scala:196) finished in 2.367 s
+17/10/23 16:28:46 INFO BlockManagerInfo: Removed taskresult_5 on 10.0.0.26:42149 in memory (size: 4.2 MB, free: 3.4 GB)
+17/10/23 16:28:46 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+17/10/23 16:28:46 INFO DAGScheduler: Job 0 finished: collect at Word2Vec.scala:196, took 11.729359 s
+17/10/23 16:28:46 INFO Word2Vec: vocabSize = 44115, trainWordsCount = 6221901
+17/10/23 16:28:46 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.9 KB, free 366.0 MB)
+17/10/23 16:28:46 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.0 KB, free 366.0 MB)
+17/10/23 16:28:46 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.0.14:40994 (size: 4.0 KB, free: 366.3 MB)
+17/10/23 16:28:46 INFO SparkContext: Created broadcast 3 from broadcast at Word2Vec.scala:315
+17/10/23 16:28:46 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 19.5 MB, free 346.5 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.7 MB, free 343.9 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.0.14:40994 (size: 2.7 MB, free: 363.6 MB)
+17/10/23 16:28:47 INFO SparkContext: Created broadcast 4 from broadcast at Word2Vec.scala:316
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 5.0 MB, free 338.8 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 1520.4 KB, free 337.4 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.14:40994 (size: 1520.4 KB, free: 362.1 MB)
+17/10/23 16:28:47 INFO SparkContext: Created broadcast 5 from broadcast at Word2Vec.scala:317
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 16.8 MB, free 320.5 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 MB, free 316.5 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.0.0.14:40994 (size: 4.0 MB, free: 358.1 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_6_piece1 stored as bytes in memory (estimated size 4.0 MB, free 312.5 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_6_piece1 in memory on 10.0.0.14:40994 (size: 4.0 MB, free: 354.1 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_6_piece2 stored as bytes in memory (estimated size 4.0 MB, free 308.5 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_6_piece2 in memory on 10.0.0.14:40994 (size: 4.0 MB, free: 350.1 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_6_piece3 stored as bytes in memory (estimated size 4.0 MB, free 304.5 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_6_piece3 in memory on 10.0.0.14:40994 (size: 4.0 MB, free: 346.1 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_6_piece4 stored as bytes in memory (estimated size 859.5 KB, free 303.7 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_6_piece4 in memory on 10.0.0.14:40994 (size: 859.5 KB, free: 345.3 MB)
+17/10/23 16:28:47 INFO SparkContext: Created broadcast 6 from broadcast at Word2Vec.scala:359
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 16.8 MB, free 286.9 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 84.2 KB, free 286.8 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.0.0.14:40994 (size: 84.2 KB, free: 345.2 MB)
+17/10/23 16:28:47 INFO SparkContext: Created broadcast 7 from broadcast at Word2Vec.scala:360
+17/10/23 16:28:47 INFO SparkContext: Starting job: collect at Word2Vec.scala:438
+17/10/23 16:28:47 INFO DAGScheduler: Registering RDD 9 (repartition at Word2Vec.scala:344)
+17/10/23 16:28:47 INFO DAGScheduler: Registering RDD 13 (mapPartitionsWithIndex at Word2Vec.scala:361)
+17/10/23 16:28:47 INFO DAGScheduler: Got job 1 (collect at Word2Vec.scala:438) with 1 output partitions
+17/10/23 16:28:47 INFO DAGScheduler: Final stage: ResultStage 4 (collect at Word2Vec.scala:438)
+17/10/23 16:28:47 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+17/10/23 16:28:47 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+17/10/23 16:28:47 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[9] at repartition at Word2Vec.scala:344), which has no missing parents
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 6.0 KB, free 286.8 MB)
+17/10/23 16:28:47 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 3.3 KB, free 286.8 MB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.14:40994 (size: 3.3 KB, free: 345.2 MB)
+17/10/23 16:28:47 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:28:47 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[9] at repartition at Word2Vec.scala:344) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+17/10/23 16:28:47 INFO TaskSchedulerImpl: Adding task set 2.0 with 4 tasks
+17/10/23 16:28:47 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 8, 10.0.0.26, executor 1, partition 0, ANY, 4869 bytes)
+17/10/23 16:28:47 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 9, 10.0.0.27, executor 0, partition 1, ANY, 4869 bytes)
+17/10/23 16:28:47 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 10, 10.0.0.26, executor 1, partition 2, ANY, 4869 bytes)
+17/10/23 16:28:47 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 11, 10.0.0.27, executor 0, partition 3, ANY, 4869 bytes)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.26:42149 (size: 3.3 KB, free: 3.4 GB)
+17/10/23 16:28:47 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.26:42149 (size: 1520.4 KB, free: 3.4 GB)
+17/10/23 16:28:48 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.27:36927 (size: 3.3 KB, free: 3.4 GB)
+17/10/23 16:28:48 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.27:36927 (size: 23.1 KB, free: 3.4 GB)
+17/10/23 16:28:49 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.27:36927 (size: 1520.4 KB, free: 3.4 GB)
+17/10/23 16:28:50 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 8) in 3433 ms on 10.0.0.26 (executor 1) (1/4)
+17/10/23 16:28:51 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 10) in 3678 ms on 10.0.0.26 (executor 1) (2/4)
+17/10/23 16:28:51 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 11) in 4381 ms on 10.0.0.27 (executor 0) (3/4)
+17/10/23 16:28:52 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 9) in 5379 ms on 10.0.0.27 (executor 0) (4/4)
+17/10/23 16:28:52 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+17/10/23 16:28:52 INFO DAGScheduler: ShuffleMapStage 2 (repartition at Word2Vec.scala:344) finished in 5.377 s
+17/10/23 16:28:52 INFO DAGScheduler: looking for newly runnable stages
+17/10/23 16:28:52 INFO DAGScheduler: running: Set()
+17/10/23 16:28:52 INFO DAGScheduler: waiting: Set(ShuffleMapStage 3, ResultStage 4)
+17/10/23 16:28:52 INFO DAGScheduler: failed: Set()
+17/10/23 16:28:52 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[13] at mapPartitionsWithIndex at Word2Vec.scala:361), which has no missing parents
+17/10/23 16:28:52 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 6.3 KB, free 286.8 MB)
+17/10/23 16:28:52 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.4 KB, free 286.8 MB)
+17/10/23 16:28:52 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.0.0.14:40994 (size: 3.4 KB, free: 345.2 MB)
+17/10/23 16:28:52 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:28:52 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[13] at mapPartitionsWithIndex at Word2Vec.scala:361) (first 15 tasks are for partitions Vector(0))
+17/10/23 16:28:52 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+17/10/23 16:28:52 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 12, 10.0.0.26, executor 1, partition 0, NODE_LOCAL, 4890 bytes)
+17/10/23 16:28:52 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.0.0.26:42149 (size: 3.4 KB, free: 3.4 GB)
+17/10/23 16:28:52 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 10.0.0.26:45394
+17/10/23 16:28:52 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 161 bytes
+17/10/23 16:28:53 INFO BlockManagerInfo: Added rdd_12_0 in memory on 10.0.0.26:42149 (size: 46.4 MB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_6_piece2 in memory on 10.0.0.26:42149 (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_6_piece3 in memory on 10.0.0.26:42149 (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.0.0.26:42149 (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_6_piece1 in memory on 10.0.0.26:42149 (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_6_piece4 in memory on 10.0.0.26:42149 (size: 859.5 KB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.0.0.26:42149 (size: 84.2 KB, free: 3.3 GB)
+17/10/23 16:28:53 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.0.26:42149 (size: 2.7 MB, free: 3.3 GB)
+17/10/23 16:28:54 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.0.26:42149 (size: 4.0 KB, free: 3.3 GB)
+17/10/23 16:30:04 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 12) in 72013 ms on 10.0.0.26 (executor 1) (1/1)
+17/10/23 16:30:04 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+17/10/23 16:30:04 INFO DAGScheduler: ShuffleMapStage 3 (mapPartitionsWithIndex at Word2Vec.scala:361) finished in 72.014 s
+17/10/23 16:30:04 INFO DAGScheduler: looking for newly runnable stages
+17/10/23 16:30:04 INFO DAGScheduler: running: Set()
+17/10/23 16:30:04 INFO DAGScheduler: waiting: Set(ResultStage 4)
+17/10/23 16:30:04 INFO DAGScheduler: failed: Set()
+17/10/23 16:30:04 INFO DAGScheduler: Submitting ResultStage 4 (ShuffledRDD[14] at reduceByKey at Word2Vec.scala:435), which has no missing parents
+17/10/23 16:30:04 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 4.4 KB, free 286.8 MB)
+17/10/23 16:30:04 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 2.4 KB, free 286.8 MB)
+17/10/23 16:30:04 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.0.0.14:40994 (size: 2.4 KB, free: 345.2 MB)
+17/10/23 16:30:04 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:30:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (ShuffledRDD[14] at reduceByKey at Word2Vec.scala:435) (first 15 tasks are for partitions Vector(0))
+17/10/23 16:30:04 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+17/10/23 16:30:04 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 13, 10.0.0.26, executor 1, partition 0, NODE_LOCAL, 4625 bytes)
+17/10/23 16:30:04 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.0.0.26:42149 (size: 2.4 KB, free: 3.3 GB)
+17/10/23 16:30:04 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 10.0.0.26:45394
+17/10/23 16:30:04 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 2 is 137 bytes
+17/10/23 16:30:05 INFO BlockManagerInfo: Added taskresult_13 in memory on 10.0.0.26:42149 (size: 35.9 MB, free: 3.3 GB)
+17/10/23 16:30:05 INFO ContextCleaner: Cleaned shuffle 0
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 10.0.0.26:42149 in memory (size: 3.3 KB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 10.0.0.14:40994 in memory (size: 3.3 KB, free: 345.2 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 10.0.0.27:36927 in memory (size: 3.3 KB, free: 3.4 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 10.0.0.14:40994 in memory (size: 3.4 KB, free: 345.2 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 10.0.0.26:42149 in memory (size: 3.4 KB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.0.0.14:40994 in memory (size: 2.6 KB, free: 345.2 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.0.0.26:42149 in memory (size: 2.6 KB, free: 3.3 GB)
+17/10/23 16:30:05 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 13) in 848 ms on 10.0.0.26 (executor 1) (1/1)
+17/10/23 16:30:05 INFO DAGScheduler: ResultStage 4 (collect at Word2Vec.scala:438) finished in 0.848 s
+17/10/23 16:30:05 INFO DAGScheduler: Job 1 finished: collect at Word2Vec.scala:438, took 78.276379 s
+17/10/23 16:30:05 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed taskresult_13 on 10.0.0.26:42149 in memory (size: 35.9 MB, free: 3.3 GB)
+17/10/23 16:30:05 INFO TorrentBroadcast: Destroying Broadcast(6) (from destroy at Word2Vec.scala:449)
+17/10/23 16:30:05 INFO TorrentBroadcast: Destroying Broadcast(7) (from destroy at Word2Vec.scala:450)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece2 on 10.0.0.14:40994 in memory (size: 4.0 MB, free: 349.2 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece4 on 10.0.0.14:40994 in memory (size: 859.5 KB, free: 350.0 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece1 on 10.0.0.14:40994 in memory (size: 4.0 MB, free: 354.0 MB)
+17/10/23 16:30:05 INFO MapPartitionsRDD: Removing RDD 12 from persistence list
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 10.0.0.14:40994 in memory (size: 84.2 KB, free: 354.1 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece3 on 10.0.0.14:40994 in memory (size: 4.0 MB, free: 358.1 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 10.0.0.14:40994 in memory (size: 4.0 MB, free: 362.1 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece2 on 10.0.0.26:42149 in memory (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManager: Removing RDD 12
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 10.0.0.26:42149 in memory (size: 84.2 KB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece4 on 10.0.0.26:42149 in memory (size: 859.5 KB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece1 on 10.0.0.26:42149 in memory (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece3 on 10.0.0.26:42149 in memory (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 10.0.0.26:42149 in memory (size: 4.0 MB, free: 3.3 GB)
+17/10/23 16:30:05 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+17/10/23 16:30:05 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+17/10/23 16:30:05 INFO TorrentBroadcast: Destroying Broadcast(3) (from destroy at Word2Vec.scala:321)
+17/10/23 16:30:05 INFO TorrentBroadcast: Destroying Broadcast(4) (from destroy at Word2Vec.scala:322)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 10.0.0.14:40994 in memory (size: 4.0 KB, free: 362.1 MB)
+17/10/23 16:30:05 INFO TorrentBroadcast: Destroying Broadcast(5) (from destroy at Word2Vec.scala:323)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 10.0.0.14:40994 in memory (size: 2.7 MB, free: 364.8 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 10.0.0.14:40994 in memory (size: 1520.4 KB, free: 366.3 MB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 10.0.0.26:42149 in memory (size: 4.0 KB, free: 3.3 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 10.0.0.26:42149 in memory (size: 2.7 MB, free: 3.4 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 10.0.0.26:42149 in memory (size: 1520.4 KB, free: 3.4 GB)
+17/10/23 16:30:05 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 10.0.0.27:36927 in memory (size: 1520.4 KB, free: 3.4 GB)
+เดือน 0.6595171093940735
+รางวัล 0.6064758896827698
+ชม. 0.6017328500747681
+ชิ้น 0.5713397264480591
+อาทิตย์ 0.5541952848434448
+17/10/23 16:30:06 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/10/23 16:30:06 INFO SparkContext: Starting job: saveAsTextFile at Word2Vec.scala:675
+17/10/23 16:30:06 INFO DAGScheduler: Got job 2 (saveAsTextFile at Word2Vec.scala:675) with 1 output partitions
+17/10/23 16:30:06 INFO DAGScheduler: Final stage: ResultStage 5 (saveAsTextFile at Word2Vec.scala:675)
+17/10/23 16:30:06 INFO DAGScheduler: Parents of final stage: List()
+17/10/23 16:30:06 INFO DAGScheduler: Missing parents: List()
+17/10/23 16:30:06 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[16] at saveAsTextFile at Word2Vec.scala:675), which has no missing parents
+17/10/23 16:30:06 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 70.5 KB, free 366.0 MB)
+17/10/23 16:30:06 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 25.0 KB, free 365.9 MB)
+17/10/23 16:30:06 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.0.0.14:40994 (size: 25.0 KB, free: 366.3 MB)
+17/10/23 16:30:06 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:30:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[16] at saveAsTextFile at Word2Vec.scala:675) (first 15 tasks are for partitions Vector(0))
+17/10/23 16:30:06 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+17/10/23 16:30:06 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 14, 10.0.0.26, executor 1, partition 0, PROCESS_LOCAL, 4940 bytes)
+17/10/23 16:30:06 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.0.0.26:42149 (size: 25.0 KB, free: 3.4 GB)
+17/10/23 16:30:06 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 14) in 310 ms on 10.0.0.26 (executor 1) (1/1)
+17/10/23 16:30:06 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+17/10/23 16:30:06 INFO DAGScheduler: ResultStage 5 (saveAsTextFile at Word2Vec.scala:675) finished in 0.310 s
+17/10/23 16:30:06 INFO DAGScheduler: Job 2 finished: saveAsTextFile at Word2Vec.scala:675, took 0.352493 s
+17/10/23 16:30:06 INFO SharedState: loading hive config file: file:/opt/spark-2.2.0-bin-hadoop2.7/conf/hive-site.xml
+17/10/23 16:30:06 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/centos/kjzth/sparksample/spark-warehouse/').
+17/10/23 16:30:06 INFO SharedState: Warehouse path is 'file:/home/centos/kjzth/sparksample/spark-warehouse/'.
+17/10/23 16:30:06 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3c6476c6{/SQL,null,AVAILABLE,@Spark}
+17/10/23 16:30:06 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@779736ea{/SQL/json,null,AVAILABLE,@Spark}
+17/10/23 16:30:06 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@71460a6e{/SQL/execution,null,AVAILABLE,@Spark}
+17/10/23 16:30:06 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2bf81716{/SQL/execution/json,null,AVAILABLE,@Spark}
+17/10/23 16:30:06 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@20e1613e{/static/sql,null,AVAILABLE,@Spark}
+17/10/23 16:30:06 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 10.0.0.14:40994 in memory (size: 25.0 KB, free: 366.3 MB)
+17/10/23 16:30:06 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 10.0.0.26:42149 in memory (size: 25.0 KB, free: 3.4 GB)
+17/10/23 16:30:07 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+17/10/23 16:30:09 INFO ParquetFileFormat: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+17/10/23 16:30:09 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/10/23 16:30:09 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+17/10/23 16:30:09 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/10/23 16:30:09 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+17/10/23 16:30:09 INFO CodeGenerator: Code generated in 160.661177 ms
+17/10/23 16:30:09 INFO SparkContext: Starting job: parquet at Word2Vec.scala:688
+17/10/23 16:30:09 INFO DAGScheduler: Registering RDD 19 (parquet at Word2Vec.scala:688)
+17/10/23 16:30:09 INFO DAGScheduler: Got job 3 (parquet at Word2Vec.scala:688) with 1 output partitions
+17/10/23 16:30:09 INFO DAGScheduler: Final stage: ResultStage 7 (parquet at Word2Vec.scala:688)
+17/10/23 16:30:09 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 6)
+17/10/23 16:30:09 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 6)
+17/10/23 16:30:09 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[19] at parquet at Word2Vec.scala:688), which has no missing parents
+17/10/23 16:30:09 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 4.9 KB, free 366.0 MB)
+17/10/23 16:30:09 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 2.9 KB, free 366.0 MB)
+17/10/23 16:30:09 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.0.0.14:40994 (size: 2.9 KB, free: 366.3 MB)
+17/10/23 16:30:09 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:30:09 INFO DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[19] at parquet at Word2Vec.scala:688) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+17/10/23 16:30:09 INFO TaskSchedulerImpl: Adding task set 6.0 with 8 tasks
+17/10/23 16:30:09 WARN TaskSetManager: Stage 6 contains a task of very large size (2813 KB). The maximum recommended task size is 100 KB.
+17/10/23 16:30:09 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 15, 10.0.0.27, executor 0, partition 0, PROCESS_LOCAL, 2881291 bytes)
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 16, 10.0.0.26, executor 1, partition 1, PROCESS_LOCAL, 2875859 bytes)
+17/10/23 16:30:10 INFO ContextCleaner: Cleaned accumulator 168
+17/10/23 16:30:10 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 10.0.0.14:40994 in memory (size: 2.4 KB, free: 366.3 MB)
+17/10/23 16:30:10 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 10.0.0.26:42149 in memory (size: 2.4 KB, free: 3.4 GB)
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 2.0 in stage 6.0 (TID 17, 10.0.0.27, executor 0, partition 2, PROCESS_LOCAL, 2882335 bytes)
+17/10/23 16:30:10 INFO ContextCleaner: Cleaned shuffle 2
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 3.0 in stage 6.0 (TID 18, 10.0.0.26, executor 1, partition 3, PROCESS_LOCAL, 2878515 bytes)
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 4.0 in stage 6.0 (TID 19, 10.0.0.27, executor 0, partition 4, PROCESS_LOCAL, 2881315 bytes)
+17/10/23 16:30:10 INFO ContextCleaner: Cleaned shuffle 1
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 5.0 in stage 6.0 (TID 20, 10.0.0.26, executor 1, partition 5, PROCESS_LOCAL, 2886183 bytes)
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 6.0 in stage 6.0 (TID 21, 10.0.0.27, executor 0, partition 6, PROCESS_LOCAL, 2879531 bytes)
+17/10/23 16:30:10 INFO BlockManager: Removing RDD 12
+17/10/23 16:30:10 INFO ContextCleaner: Cleaned RDD 12
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 7.0 in stage 6.0 (TID 22, 10.0.0.26, executor 1, partition 7, PROCESS_LOCAL, 2881599 bytes)
+17/10/23 16:30:10 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.0.0.26:42149 (size: 2.9 KB, free: 3.4 GB)
+17/10/23 16:30:10 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.0.0.27:36927 (size: 2.9 KB, free: 3.4 GB)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 7.0 in stage 6.0 (TID 22) in 362 ms on 10.0.0.26 (executor 1) (1/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 16) in 1028 ms on 10.0.0.26 (executor 1) (2/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 5.0 in stage 6.0 (TID 20) in 382 ms on 10.0.0.26 (executor 1) (3/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 3.0 in stage 6.0 (TID 18) in 392 ms on 10.0.0.26 (executor 1) (4/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 6.0 in stage 6.0 (TID 21) in 385 ms on 10.0.0.27 (executor 0) (5/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 2.0 in stage 6.0 (TID 17) in 415 ms on 10.0.0.27 (executor 0) (6/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 4.0 in stage 6.0 (TID 19) in 403 ms on 10.0.0.27 (executor 0) (7/8)
+17/10/23 16:30:10 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 15) in 1057 ms on 10.0.0.27 (executor 0) (8/8)
+17/10/23 16:30:10 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+17/10/23 16:30:10 INFO DAGScheduler: ShuffleMapStage 6 (parquet at Word2Vec.scala:688) finished in 1.058 s
+17/10/23 16:30:10 INFO DAGScheduler: looking for newly runnable stages
+17/10/23 16:30:10 INFO DAGScheduler: running: Set()
+17/10/23 16:30:10 INFO DAGScheduler: waiting: Set(ResultStage 7)
+17/10/23 16:30:10 INFO DAGScheduler: failed: Set()
+17/10/23 16:30:10 INFO DAGScheduler: Submitting ResultStage 7 (ShuffledRowRDD[20] at parquet at Word2Vec.scala:688), which has no missing parents
+17/10/23 16:30:10 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 76.4 KB, free 366.0 MB)
+17/10/23 16:30:10 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 28.2 KB, free 365.9 MB)
+17/10/23 16:30:10 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.0.0.14:40994 (size: 28.2 KB, free: 366.2 MB)
+17/10/23 16:30:10 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1006
+17/10/23 16:30:10 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (ShuffledRowRDD[20] at parquet at Word2Vec.scala:688) (first 15 tasks are for partitions Vector(0))
+17/10/23 16:30:10 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+17/10/23 16:30:10 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 23, 10.0.0.26, executor 1, partition 0, NODE_LOCAL, 4730 bytes)
+17/10/23 16:30:10 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.0.0.26:42149 (size: 28.2 KB, free: 3.4 GB)
+17/10/23 16:30:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 10.0.0.26:45394
+17/10/23 16:30:10 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 3 is 159 bytes
+17/10/23 16:30:12 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 23) in 1480 ms on 10.0.0.26 (executor 1) (1/1)
+17/10/23 16:30:12 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+17/10/23 16:30:12 INFO DAGScheduler: ResultStage 7 (parquet at Word2Vec.scala:688) finished in 1.482 s
+17/10/23 16:30:12 INFO DAGScheduler: Job 3 finished: parquet at Word2Vec.scala:688, took 2.596945 s
+17/10/23 16:30:12 INFO FileFormatWriter: Job null committed.
+17/10/23 16:30:12 INFO SparkContext: Invoking stop() from shutdown hook
+17/10/23 16:30:12 INFO AbstractConnector: Stopped Spark@6d6bc158{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+17/10/23 16:30:12 INFO SparkUI: Stopped Spark web UI at http://10.0.0.14:4040
+17/10/23 16:30:12 INFO StandaloneSchedulerBackend: Shutting down all executors
+17/10/23 16:30:12 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+17/10/23 16:30:12 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/10/23 16:30:12 INFO MemoryStore: MemoryStore cleared
+17/10/23 16:30:12 INFO BlockManager: BlockManager stopped
+17/10/23 16:30:12 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/10/23 16:30:12 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/10/23 16:30:12 INFO SparkContext: Successfully stopped SparkContext
+17/10/23 16:30:12 INFO ShutdownHookManager: Shutdown hook called
+17/10/23 16:30:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-967ae342-f9b1-48f1-8ef3-a6276e7a10c5

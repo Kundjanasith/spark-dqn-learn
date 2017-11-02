@@ -1,0 +1,3 @@
+ssw1-sea-core-0.novalocal
+ssw1-sea-master-0.novalocal
+ssw1-sea-worker-0.novalocal

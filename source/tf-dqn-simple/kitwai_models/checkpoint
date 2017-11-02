@@ -1,0 +1,2 @@
+model_checkpoint_path: "/spark_dqn/source/tf-dqn-simple/kitwai_models/spark"
+all_model_checkpoint_paths: "/spark_dqn/source/tf-dqn-simple/kitwai_models/spark"

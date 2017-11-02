@@ -1,0 +1,1 @@
+spark-engine.sh: line 9: target/scala-2.10/spark-sample_2.10-1.0.jar: Permission denied

@@ -1,0 +1,80 @@
+17/11/02 07:11:00 INFO SparkContext: Running Spark version 2.2.0
+17/11/02 07:11:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/11/02 07:11:01 INFO SparkContext: Submitted application: W2V
+17/11/02 07:11:01 INFO SecurityManager: Changing view acls to: centos
+17/11/02 07:11:01 INFO SecurityManager: Changing modify acls to: centos
+17/11/02 07:11:01 INFO SecurityManager: Changing view acls groups to: 
+17/11/02 07:11:01 INFO SecurityManager: Changing modify acls groups to: 
+17/11/02 07:11:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(centos); groups with view permissions: Set(); users  with modify permissions: Set(centos); groups with modify permissions: Set()
+17/11/02 07:11:01 INFO Utils: Successfully started service 'sparkDriver' on port 34072.
+17/11/02 07:11:01 INFO SparkEnv: Registering MapOutputTracker
+17/11/02 07:11:01 INFO SparkEnv: Registering BlockManagerMaster
+17/11/02 07:11:01 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/11/02 07:11:01 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/11/02 07:11:01 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c985e5b6-be18-4356-bdde-6438557413c9
+17/11/02 07:11:01 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+17/11/02 07:11:01 INFO SparkEnv: Registering OutputCommitCoordinator
+17/11/02 07:11:01 INFO log: Logging initialized @1870ms
+17/11/02 07:11:01 INFO Server: jetty-9.3.z-SNAPSHOT
+17/11/02 07:11:02 INFO Server: Started @1955ms
+17/11/02 07:11:02 INFO AbstractConnector: Started ServerConnector@7adbd080{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+17/11/02 07:11:02 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@35038141{/jobs,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7646731d{/jobs/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3b1bb3ab{/jobs/job,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2449cff7{/jobs/job/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@62da83ed{/stages,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@37d80fe7{/stages/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@e3cee7b{/stages/stage,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@29ad44e3{/stages/stage/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5af9926a{/stages/pool,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@fac80{/stages/pool/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@649f2009{/storage,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@69adf72c{/storage/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1a15b789{/storage/rdd,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@51650883{/storage/rdd/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5bd1ceca{/environment,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@499b2a5c{/environment/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@c1fca1e{/executors,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@344344fa{/executors/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@70e659aa{/executors/threadDump,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@285f09de{/executors/threadDump/json,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@31500940{/static,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4fdfa676{/,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5be82d43{/api,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1734f68{/jobs/job/kill,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5ed190be{/stages/stage/kill,null,AVAILABLE,@Spark}
+17/11/02 07:11:02 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.0.0.21:4040
+17/11/02 07:11:02 INFO SparkContext: Added JAR file:/home/centos/sparksample_ssw2/target/scala-2.10/spark-sample_2.10-1.0.jar at spark://10.0.0.21:34072/jars/spark-sample_2.10-1.0.jar with timestamp 1509581462139
+17/11/02 07:11:02 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://ssw1-sea-master-0.novalocal:7007...
+17/11/02 07:11:02 WARN StandaloneAppClient$ClientEndpoint: Failed to connect to master ssw1-sea-master-0.novalocal:7007
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:205)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:100)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:108)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:106)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Failed to connect to ssw1-sea-master-0.novalocal/10.0.0.21:7007
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:232)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:182)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:194)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:190)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: ssw1-sea-master-0.novalocal/10.0.0.21:7007
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:257)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:291)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:631)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:566)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:131)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	... 1 more

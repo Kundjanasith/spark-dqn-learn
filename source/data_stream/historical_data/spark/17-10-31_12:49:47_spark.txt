@@ -1,0 +1,119 @@
+17/10/31 12:49:47 INFO SparkContext: Running Spark version 2.2.0
+17/10/31 12:49:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/31 12:49:47 INFO SparkContext: Submitted application: W2V
+17/10/31 12:49:47 INFO SecurityManager: Changing view acls to: centos
+17/10/31 12:49:47 INFO SecurityManager: Changing modify acls to: centos
+17/10/31 12:49:47 INFO SecurityManager: Changing view acls groups to: 
+17/10/31 12:49:47 INFO SecurityManager: Changing modify acls groups to: 
+17/10/31 12:49:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(centos); groups with view permissions: Set(); users  with modify permissions: Set(centos); groups with modify permissions: Set()
+17/10/31 12:49:47 INFO Utils: Successfully started service 'sparkDriver' on port 41563.
+17/10/31 12:49:47 INFO SparkEnv: Registering MapOutputTracker
+17/10/31 12:49:47 INFO SparkEnv: Registering BlockManagerMaster
+17/10/31 12:49:47 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/10/31 12:49:47 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/10/31 12:49:47 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-28f8423a-fcd6-4620-bb45-1723e0622c42
+17/10/31 12:49:47 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+17/10/31 12:49:47 INFO SparkEnv: Registering OutputCommitCoordinator
+17/10/31 12:49:47 INFO log: Logging initialized @1506ms
+17/10/31 12:49:47 INFO Server: jetty-9.3.z-SNAPSHOT
+17/10/31 12:49:47 INFO Server: Started @1588ms
+17/10/31 12:49:48 INFO AbstractConnector: Started ServerConnector@7adbd080{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+17/10/31 12:49:48 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@35038141{/jobs,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7646731d{/jobs/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3b1bb3ab{/jobs/job,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2449cff7{/jobs/job/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@62da83ed{/stages,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@37d80fe7{/stages/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@e3cee7b{/stages/stage,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@29ad44e3{/stages/stage/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5af9926a{/stages/pool,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@fac80{/stages/pool/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@649f2009{/storage,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@69adf72c{/storage/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1a15b789{/storage/rdd,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@51650883{/storage/rdd/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5bd1ceca{/environment,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@499b2a5c{/environment/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@c1fca1e{/executors,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@344344fa{/executors/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@70e659aa{/executors/threadDump,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@285f09de{/executors/threadDump/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@31500940{/static,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4fdfa676{/,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5be82d43{/api,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1734f68{/jobs/job/kill,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5ed190be{/stages/stage/kill,null,AVAILABLE,@Spark}
+17/10/31 12:49:48 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.0.0.19:4040
+17/10/31 12:49:48 INFO SparkContext: Added JAR file:/home/centos/sparksample/target/scala-2.10/spark-sample_2.10-1.0.jar at spark://10.0.0.19:41563/jars/spark-sample_2.10-1.0.jar with timestamp 1509428988074
+17/10/31 12:49:48 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://ssw1-sea-master-0.novalocal:7077...
+17/10/31 12:49:48 INFO TransportClientFactory: Successfully created connection to ssw1-sea-master-0.novalocal/10.0.0.19:7077 after 25 ms (0 ms spent in bootstraps)
+17/10/31 12:49:48 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20171031124948-0012
+17/10/31 12:49:48 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171031124948-0012/0 on worker-20171030154439-10.0.0.5-33804 (10.0.0.5:33804) with 4 cores
+17/10/31 12:49:48 INFO StandaloneSchedulerBackend: Granted executor ID app-20171031124948-0012/0 on hostPort 10.0.0.5:33804 with 4 cores, 1024.0 MB RAM
+17/10/31 12:49:48 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171031124948-0012/1 on worker-20171030154435-10.0.0.21-37478 (10.0.0.21:37478) with 4 cores
+17/10/31 12:49:48 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34654.
+17/10/31 12:49:48 INFO StandaloneSchedulerBackend: Granted executor ID app-20171031124948-0012/1 on hostPort 10.0.0.21:37478 with 4 cores, 1024.0 MB RAM
+17/10/31 12:49:48 INFO NettyBlockTransferService: Server created on 10.0.0.19:34654
+17/10/31 12:49:48 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/10/31 12:49:48 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.0.19, 34654, None)
+17/10/31 12:49:48 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.19:34654 with 366.3 MB RAM, BlockManagerId(driver, 10.0.0.19, 34654, None)
+17/10/31 12:49:48 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.0.19, 34654, None)
+17/10/31 12:49:48 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.0.19, 34654, None)
+17/10/31 12:49:48 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171031124948-0012/1 is now RUNNING
+17/10/31 12:49:48 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171031124948-0012/0 is now RUNNING
+17/10/31 12:49:48 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4d6f197e{/metrics/json,null,AVAILABLE,@Spark}
+17/10/31 12:49:49 INFO EventLoggingListener: Logging events to hdfs:///tmp/spark-events/app-20171031124948-0012
+17/10/31 12:49:49 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+17/10/31 12:49:49 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 240.1 KB, free 366.1 MB)
+17/10/31 12:49:49 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.5 KB, free 366.0 MB)
+17/10/31 12:49:49 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.19:34654 (size: 23.5 KB, free: 366.3 MB)
+17/10/31 12:49:49 INFO SparkContext: Created broadcast 0 from textFile at W2V1.scala:7
+17/10/31 12:49:49 INFO FileInputFormat: Total input paths to process : 1
+17/10/31 12:49:49 INFO SparkContext: Starting job: collect at Word2Vec.scala:196
+17/10/31 12:49:49 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.21:51746) with ID 1
+17/10/31 12:49:49 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.21:39837 with 366.3 MB RAM, BlockManagerId(1, 10.0.0.21, 39837, None)
+17/10/31 12:49:50 INFO DAGScheduler: Registering RDD 4 (map at Word2Vec.scala:187)
+17/10/31 12:49:50 INFO DAGScheduler: Got job 0 (collect at Word2Vec.scala:196) with 4 output partitions
+17/10/31 12:49:50 INFO DAGScheduler: Final stage: ResultStage 1 (collect at Word2Vec.scala:196)
+17/10/31 12:49:50 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+17/10/31 12:49:50 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+17/10/31 12:49:50 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[4] at map at Word2Vec.scala:187), which has no missing parents
+17/10/31 12:49:50 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.9 KB, free 366.0 MB)
+17/10/31 12:49:50 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.8 KB, free 366.0 MB)
+17/10/31 12:49:50 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.19:34654 (size: 2.8 KB, free: 366.3 MB)
+17/10/31 12:49:50 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+17/10/31 12:49:50 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[4] at map at Word2Vec.scala:187) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+17/10/31 12:49:50 INFO TaskSchedulerImpl: Adding task set 0.0 with 4 tasks
+17/10/31 12:49:50 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.0.0.21, executor 1, partition 0, ANY, 4874 bytes)
+17/10/31 12:49:50 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.0.0.21, executor 1, partition 1, ANY, 4874 bytes)
+17/10/31 12:49:50 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, 10.0.0.21, executor 1, partition 2, ANY, 4874 bytes)
+17/10/31 12:49:50 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, 10.0.0.21, executor 1, partition 3, ANY, 4874 bytes)
+17/10/31 12:49:50 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.21:39837 (size: 2.8 KB, free: 366.3 MB)
+17/10/31 12:49:50 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.5:51556) with ID 0
+17/10/31 12:49:50 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.5:44033 with 366.3 MB RAM, BlockManagerId(0, 10.0.0.5, 44033, None)
+17/10/31 12:49:50 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.21:39837 (size: 23.5 KB, free: 366.3 MB)
+17/10/31 12:49:58 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 8792 ms on 10.0.0.21 (executor 1) (1/4)
+17/10/31 12:49:59 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 9184 ms on 10.0.0.21 (executor 1) (2/4)
+17/10/31 12:49:59 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 9492 ms on 10.0.0.21 (executor 1) (3/4)
+17/10/31 12:49:59 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 9504 ms on 10.0.0.21 (executor 1) (4/4)
+17/10/31 12:49:59 INFO DAGScheduler: ShuffleMapStage 0 (map at Word2Vec.scala:187) finished in 9.522 s
+17/10/31 12:49:59 INFO DAGScheduler: looking for newly runnable stages
+17/10/31 12:49:59 INFO DAGScheduler: running: Set()
+17/10/31 12:49:59 INFO DAGScheduler: waiting: Set(ResultStage 1)
+17/10/31 12:49:59 INFO DAGScheduler: failed: Set()
+17/10/31 12:49:59 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/10/31 12:49:59 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[7] at map at Word2Vec.scala:190), which has no missing parents
+17/10/31 12:49:59 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.8 KB, free 366.0 MB)
+17/10/31 12:49:59 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.6 KB, free 366.0 MB)
+17/10/31 12:49:59 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.19:34654 (size: 2.6 KB, free: 366.3 MB)
+17/10/31 12:49:59 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+17/10/31 12:49:59 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at map at Word2Vec.scala:190) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+17/10/31 12:49:59 INFO TaskSchedulerImpl: Adding task set 1.0 with 4 tasks
+17/10/31 12:49:59 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 4, 10.0.0.21, executor 1, partition 0, NODE_LOCAL, 4625 bytes)
+17/10/31 12:49:59 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 5, 10.0.0.21, executor 1, partition 1, NODE_LOCAL, 4625 bytes)
+17/10/31 12:49:59 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 6, 10.0.0.21, executor 1, partition 2, NODE_LOCAL, 4625 bytes)
+17/10/31 12:49:59 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 7, 10.0.0.21, executor 1, partition 3, NODE_LOCAL, 4625 bytes)
+17/10/31 12:49:59 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.21:39837 (size: 2.6 KB, free: 366.3 MB)
+17/10/31 12:49:59 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.21:51746
+17/10/31 12:49:59 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 154 bytes

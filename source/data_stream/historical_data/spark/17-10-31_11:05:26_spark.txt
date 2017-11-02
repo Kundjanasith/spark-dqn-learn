@@ -1,0 +1,17 @@
+17/10/31 11:05:26 INFO SparkContext: Running Spark version 2.2.0
+17/10/31 11:05:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/31 11:05:27 INFO SparkContext: Submitted application: W2V
+17/10/31 11:05:27 INFO SecurityManager: Changing view acls to: centos
+17/10/31 11:05:27 INFO SecurityManager: Changing modify acls to: centos
+17/10/31 11:05:27 INFO SecurityManager: Changing view acls groups to: 
+17/10/31 11:05:27 INFO SecurityManager: Changing modify acls groups to: 
+17/10/31 11:05:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(centos); groups with view permissions: Set(); users  with modify permissions: Set(centos); groups with modify permissions: Set()
+17/10/31 11:05:27 INFO Utils: Successfully started service 'sparkDriver' on port 46133.
+17/10/31 11:05:27 INFO SparkEnv: Registering MapOutputTracker
+17/10/31 11:05:27 INFO SparkEnv: Registering BlockManagerMaster
+17/10/31 11:05:27 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/10/31 11:05:27 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/10/31 11:05:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-045faf8e-03e9-49f0-bad0-34d6ad0789e0
+17/10/31 11:05:27 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+17/10/31 11:05:27 INFO SparkEnv: Registering OutputCommitCoordinator
+17/10/31 11:05:28 INFO log: Logging initialized @1669ms
