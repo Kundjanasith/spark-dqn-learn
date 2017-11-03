@@ -56,19 +56,22 @@ for path in file_lists:
         index_start = index_start + 1
 
     if status != "-1" and start_time != "start_time" and stop_time != "stop_time":
-        startTime = start_time.split(" ")[0] + " " + start_time.split(" ")[1]
-        stopTime = stop_time.split(" ")[0] + " " + stop_time.split(" ")[1]
-        # print(startTime)
-        startNorm = date_norm(startTime)
-        startDate = datetime(startNorm[0], startNorm[1], startNorm[2], startNorm[3], startNorm[4], startNorm[5])
-        startDate = mktime(startDate.timetuple())
-        # print(startDate)
-        # print(stopTime)
-        stopNorm = date_norm(stopTime)
-        stopDate = datetime(stopNorm[0], stopNorm[1], stopNorm[2], stopNorm[3], stopNorm[4], stopNorm[5])
-        stopDate = mktime(stopDate.timetuple())
-        # print(stopDate)
-        status = str(stopDate - startDate)
+        if len(start_time.split(" ")) != 2 or len(stop_times.split(" ")) != 2 :
+	   status = str(0)
+        else:
+           startTime = start_time.split(" ")[0] + " " + start_time.split(" ")[1]
+           stopTime = stop_time.split(" ")[0] + " " + stop_time.split(" ")[1]
+        #print(startTime)
+           startNorm = date_norm(startTime)
+           startDate = datetime(startNorm[0], startNorm[1], startNorm[2], startNorm[3], startNorm[4], startNorm[5])
+           startDate = mktime(startDate.timetuple())
+        #print(startDate)
+        #print(stopTime)
+           stopNorm = date_norm(stopTime)
+           stopDate = datetime(stopNorm[0], stopNorm[1], stopNorm[2], stopNorm[3], stopNorm[4], stopNorm[5])
+           stopDate = mktime(stopDate.timetuple())
+        #print(stopDate)
+           status = str(stopDate - startDate)
         # print(path+":"+status)
 
     input_path = path.split("/")[2][:-3]+"csv"

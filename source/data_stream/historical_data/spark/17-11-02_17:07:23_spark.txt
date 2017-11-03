@@ -1,0 +1,445 @@
+17/11/02 17:07:23 INFO SparkContext: Running Spark version 2.2.0
+17/11/02 17:07:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/11/02 17:07:23 INFO SparkContext: Submitted application: W2V
+17/11/02 17:07:23 INFO SecurityManager: Changing view acls to: centos
+17/11/02 17:07:23 INFO SecurityManager: Changing modify acls to: centos
+17/11/02 17:07:23 INFO SecurityManager: Changing view acls groups to: 
+17/11/02 17:07:23 INFO SecurityManager: Changing modify acls groups to: 
+17/11/02 17:07:23 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(centos); groups with view permissions: Set(); users  with modify permissions: Set(centos); groups with modify permissions: Set()
+17/11/02 17:07:24 INFO Utils: Successfully started service 'sparkDriver' on port 45887.
+17/11/02 17:07:24 INFO SparkEnv: Registering MapOutputTracker
+17/11/02 17:07:24 INFO SparkEnv: Registering BlockManagerMaster
+17/11/02 17:07:24 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/11/02 17:07:24 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/11/02 17:07:24 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-b1b43358-fede-45a5-b397-739a8c6693bf
+17/11/02 17:07:24 INFO MemoryStore: MemoryStore started with capacity 3.0 GB
+17/11/02 17:07:24 INFO SparkEnv: Registering OutputCommitCoordinator
+17/11/02 17:07:24 INFO log: Logging initialized @1961ms
+17/11/02 17:07:24 INFO Server: jetty-9.3.z-SNAPSHOT
+17/11/02 17:07:24 INFO Server: Started @2047ms
+17/11/02 17:07:24 INFO AbstractConnector: Started ServerConnector@3fade846{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+17/11/02 17:07:24 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2b5cb9b2{/jobs,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7c18432b{/jobs/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@70e29e14{/jobs/job,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@40bffbca{/jobs/job/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@42a9a63e{/stages,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5d8445d7{/stages/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@384fc774{/stages/stage,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@408b35bf{/stages/stage/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@15bcf458{/stages/pool,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@43c67247{/stages/pool/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@726386ed{/storage,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@14bb2297{/storage/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@797501a{/storage/rdd,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@57f791c6{/storage/rdd/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6c4f9535{/environment,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@30c31dd7{/environment/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@596df867{/executors,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@241a53ef{/executors/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2db2cd5{/executors/threadDump,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@615f972{/executors/threadDump/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@73393584{/static,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3aacf32a{/,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@82c57b3{/api,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@473b3b7a{/jobs/job/kill,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@77b7ffa4{/stages/stage/kill,null,AVAILABLE,@Spark}
+17/11/02 17:07:24 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.0.0.5:4040
+17/11/02 17:07:24 INFO SparkContext: Added JAR file:/home/centos/sparksample_x/target/scala-2.10/spark-sample_2.10-1.0.jar at spark://10.0.0.5:45887/jars/spark-sample_2.10-1.0.jar with timestamp 1509617244408
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://ssw1-sea-master-0.novalocal:7077...
+17/11/02 17:07:24 INFO TransportClientFactory: Successfully created connection to ssw1-sea-master-0.novalocal/10.0.0.5:7077 after 21 ms (0 ms spent in bootstraps)
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20171102170724-0010
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/0 on worker-20171102153428-10.0.0.13-34780 (10.0.0.13:34780) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/0 on hostPort 10.0.0.13:34780 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/1 on worker-20171102132248-10.0.0.28-42388 (10.0.0.28:42388) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/1 on hostPort 10.0.0.28:42388 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/2 on worker-20171102153431-10.0.0.36-34793 (10.0.0.36:34793) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/2 on hostPort 10.0.0.36:34793 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/3 on worker-20171102132625-10.0.0.32-38142 (10.0.0.32:38142) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/3 on hostPort 10.0.0.32:38142 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/4 on worker-20171102153428-10.0.0.22-39321 (10.0.0.22:39321) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/4 on hostPort 10.0.0.22:39321 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/5 on worker-20171102152112-10.0.0.23-35308 (10.0.0.23:35308) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/5 on hostPort 10.0.0.23:35308 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/6 on worker-20171102153432-10.0.0.37-35852 (10.0.0.37:35852) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/6 on hostPort 10.0.0.37:35852 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/7 on worker-20171102153432-10.0.0.34-42013 (10.0.0.34:42013) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/7 on hostPort 10.0.0.34:42013 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/8 on worker-20171102132251-10.0.0.21-40684 (10.0.0.21:40684) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/8 on hostPort 10.0.0.21:40684 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/9 on worker-20171102153431-10.0.0.19-33144 (10.0.0.19:33144) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/9 on hostPort 10.0.0.19:33144 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20171102170724-0010/10 on worker-20171102153432-10.0.0.31-33365 (10.0.0.31:33365) with 4 cores
+17/11/02 17:07:24 INFO StandaloneSchedulerBackend: Granted executor ID app-20171102170724-0010/10 on hostPort 10.0.0.31:33365 with 4 cores, 6.0 GB RAM
+17/11/02 17:07:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45247.
+17/11/02 17:07:24 INFO NettyBlockTransferService: Server created on 10.0.0.5:45247
+17/11/02 17:07:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/11/02 17:07:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.0.5, 45247, None)
+17/11/02 17:07:24 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.5:45247 with 3.0 GB RAM, BlockManagerId(driver, 10.0.0.5, 45247, None)
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/0 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/3 is now RUNNING
+17/11/02 17:07:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.0.5, 45247, None)
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/4 is now RUNNING
+17/11/02 17:07:24 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.0.5, 45247, None)
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/1 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/2 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/10 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/5 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/6 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/7 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/8 is now RUNNING
+17/11/02 17:07:24 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20171102170724-0010/9 is now RUNNING
+17/11/02 17:07:24 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@41e1455d{/metrics/json,null,AVAILABLE,@Spark}
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.36:33562) with ID 2
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.36:45956 with 3.0 GB RAM, BlockManagerId(2, 10.0.0.36, 45956, None)
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.19:54600) with ID 9
+17/11/02 17:07:26 INFO EventLoggingListener: Logging events to hdfs:///tmp/spark-events/app-20171102170724-0010
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.21:44252) with ID 8
+17/11/02 17:07:26 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.19:45319 with 3.0 GB RAM, BlockManagerId(9, 10.0.0.19, 45319, None)
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.21:39031 with 3.0 GB RAM, BlockManagerId(8, 10.0.0.21, 39031, None)
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.13:39266) with ID 0
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.23:52402) with ID 5
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.22:35680) with ID 4
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.32:50492) with ID 3
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.23:44777 with 3.0 GB RAM, BlockManagerId(5, 10.0.0.23, 44777, None)
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.28:57762) with ID 1
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.13:45568 with 3.0 GB RAM, BlockManagerId(0, 10.0.0.13, 45568, None)
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.22:34464 with 3.0 GB RAM, BlockManagerId(4, 10.0.0.22, 34464, None)
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.32:42431 with 3.0 GB RAM, BlockManagerId(3, 10.0.0.32, 42431, None)
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.28:38563 with 3.0 GB RAM, BlockManagerId(1, 10.0.0.28, 38563, None)
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.37:53424) with ID 6
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.37:34804 with 3.0 GB RAM, BlockManagerId(6, 10.0.0.37, 34804, None)
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.34:59740) with ID 7
+17/11/02 17:07:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.31:54198) with ID 10
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.34:40719 with 3.0 GB RAM, BlockManagerId(7, 10.0.0.34, 40719, None)
+17/11/02 17:07:26 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 240.1 KB, free 3.0 GB)
+17/11/02 17:07:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.0.31:39560 with 3.0 GB RAM, BlockManagerId(10, 10.0.0.31, 39560, None)
+17/11/02 17:07:26 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.5 KB, free 3.0 GB)
+17/11/02 17:07:26 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.5:45247 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:26 INFO SparkContext: Created broadcast 0 from textFile at W2V1.scala:7
+17/11/02 17:07:27 INFO FileInputFormat: Total input paths to process : 1
+17/11/02 17:07:27 INFO SparkContext: Starting job: collect at Word2Vec.scala:196
+17/11/02 17:07:27 INFO DAGScheduler: Registering RDD 4 (map at Word2Vec.scala:187)
+17/11/02 17:07:27 INFO DAGScheduler: Got job 0 (collect at Word2Vec.scala:196) with 12 output partitions
+17/11/02 17:07:27 INFO DAGScheduler: Final stage: ResultStage 1 (collect at Word2Vec.scala:196)
+17/11/02 17:07:27 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+17/11/02 17:07:27 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+17/11/02 17:07:27 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[4] at map at Word2Vec.scala:187), which has no missing parents
+17/11/02 17:07:27 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.9 KB, free 3.0 GB)
+17/11/02 17:07:27 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.8 KB, free 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.5:45247 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+17/11/02 17:07:27 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[4] at map at Word2Vec.scala:187) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+17/11/02 17:07:27 INFO TaskSchedulerImpl: Adding task set 0.0 with 12 tasks
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.0.0.34, executor 7, partition 0, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.0.0.31, executor 10, partition 1, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, 10.0.0.32, executor 3, partition 2, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, 10.0.0.21, executor 8, partition 3, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, 10.0.0.13, executor 0, partition 4, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, 10.0.0.22, executor 4, partition 5, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, 10.0.0.23, executor 5, partition 6, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, 10.0.0.37, executor 6, partition 7, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, 10.0.0.28, executor 1, partition 8, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, 10.0.0.19, executor 9, partition 9, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, 10.0.0.36, executor 2, partition 10, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, 10.0.0.34, executor 7, partition 11, ANY, 4874 bytes)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.21:39031 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.36:45956 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.19:45319 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.23:44777 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.22:34464 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.32:42431 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.13:45568 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.28:38563 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.37:34804 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.31:39560 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.36:45956 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:27 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.22:34464 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.0.34:40719 (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.32:42431 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.21:39031 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.19:45319 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.28:38563 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.23:44777 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.13:45568 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.37:34804 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.34:40719 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.0.31:39560 (size: 23.5 KB, free: 3.0 GB)
+17/11/02 17:07:31 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 3582 ms on 10.0.0.34 (executor 7) (1/12)
+17/11/02 17:07:32 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 4876 ms on 10.0.0.36 (executor 2) (2/12)
+17/11/02 17:07:32 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 5050 ms on 10.0.0.19 (executor 9) (3/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 5631 ms on 10.0.0.31 (executor 10) (4/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 5751 ms on 10.0.0.22 (executor 4) (5/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 5861 ms on 10.0.0.21 (executor 8) (6/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 5942 ms on 10.0.0.32 (executor 3) (7/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 6030 ms on 10.0.0.28 (executor 1) (8/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 6119 ms on 10.0.0.37 (executor 6) (9/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 6131 ms on 10.0.0.13 (executor 0) (10/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 6173 ms on 10.0.0.34 (executor 7) (11/12)
+17/11/02 17:07:33 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 6194 ms on 10.0.0.23 (executor 5) (12/12)
+17/11/02 17:07:33 INFO DAGScheduler: ShuffleMapStage 0 (map at Word2Vec.scala:187) finished in 6.217 s
+17/11/02 17:07:33 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/11/02 17:07:33 INFO DAGScheduler: looking for newly runnable stages
+17/11/02 17:07:33 INFO DAGScheduler: running: Set()
+17/11/02 17:07:33 INFO DAGScheduler: waiting: Set(ResultStage 1)
+17/11/02 17:07:33 INFO DAGScheduler: failed: Set()
+17/11/02 17:07:33 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[7] at map at Word2Vec.scala:190), which has no missing parents
+17/11/02 17:07:33 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.8 KB, free 3.0 GB)
+17/11/02 17:07:33 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.6 KB, free 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.5:45247 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+17/11/02 17:07:33 INFO DAGScheduler: Submitting 12 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at map at Word2Vec.scala:190) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+17/11/02 17:07:33 INFO TaskSchedulerImpl: Adding task set 1.0 with 12 tasks
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 12, 10.0.0.31, executor 10, partition 0, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 13, 10.0.0.23, executor 5, partition 1, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 14, 10.0.0.34, executor 7, partition 2, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 15, 10.0.0.19, executor 9, partition 3, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 16, 10.0.0.22, executor 4, partition 4, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 17, 10.0.0.28, executor 1, partition 5, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 18, 10.0.0.36, executor 2, partition 6, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 19, 10.0.0.32, executor 3, partition 7, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 20, 10.0.0.13, executor 0, partition 8, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 21, 10.0.0.37, executor 6, partition 9, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 22, 10.0.0.21, executor 8, partition 10, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 23, 10.0.0.31, executor 10, partition 11, PROCESS_LOCAL, 4625 bytes)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.19:45319 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.28:38563 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.36:45956 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.32:42431 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.23:44777 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.13:45568 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.31:39560 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.19:54600
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.36:33562
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.37:34804 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.32:50492
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.13:39266
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.23:52402
+17/11/02 17:07:33 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 296 bytes
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.28:57762
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.21:39031 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.22:34464 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.31:54198
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.22:35680
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.21:44252
+17/11/02 17:07:33 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.37:53424
+17/11/02 17:07:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.0.34:40719 (size: 2.6 KB, free: 3.0 GB)
+17/11/02 17:07:34 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.0.34:59740
+17/11/02 17:07:34 INFO BlockManagerInfo: Added taskresult_15 in memory on 10.0.0.19:45319 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:34 INFO TransportClientFactory: Successfully created connection to /10.0.0.19:45319 after 2 ms (0 ms spent in bootstraps)
+17/11/02 17:07:34 INFO BlockManagerInfo: Added taskresult_18 in memory on 10.0.0.36:45956 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:34 INFO BlockManagerInfo: Added taskresult_22 in memory on 10.0.0.21:39031 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:34 INFO TransportClientFactory: Successfully created connection to /10.0.0.36:45956 after 8 ms (0 ms spent in bootstraps)
+17/11/02 17:07:34 INFO TransportClientFactory: Successfully created connection to /10.0.0.21:39031 after 6 ms (0 ms spent in bootstraps)
+17/11/02 17:07:34 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 15) in 1174 ms on 10.0.0.19 (executor 9) (1/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_15 on 10.0.0.19:45319 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.19:45319 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.28:38563 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.36:45956 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.13:45568 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.22:34464 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.37:34804 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.21:39031 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.5:45247 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.34:40719 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.31:39560 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.32:42431 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 18) in 1491 ms on 10.0.0.36 (executor 2) (2/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_18 on 10.0.0.36:45956 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 22) in 1511 ms on 10.0.0.21 (executor 8) (3/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_22 on 10.0.0.21:39031 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_19 in memory on 10.0.0.32:42431 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.32:42431 after 3 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_20 in memory on 10.0.0.13:45568 (size: 4.5 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.13:45568 after 1 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_16 in memory on 10.0.0.22:34464 (size: 4.3 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.22:34464 after 1 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_17 in memory on 10.0.0.28:38563 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.28:38563 after 5 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.0.23:44777 in memory (size: 2.8 KB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_19 on 10.0.0.32:42431 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 20) in 1743 ms on 10.0.0.13 (executor 0) (4/12)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 19) in 1748 ms on 10.0.0.32 (executor 3) (5/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_20 on 10.0.0.13:45568 in memory (size: 4.5 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 16) in 1754 ms on 10.0.0.22 (executor 4) (6/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_16 on 10.0.0.22:34464 in memory (size: 4.3 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 17) in 1781 ms on 10.0.0.28 (executor 1) (7/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_17 on 10.0.0.28:38563 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_13 in memory on 10.0.0.23:44777 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.23:44777 after 3 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_14 in memory on 10.0.0.34:40719 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.34:40719 after 1 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_21 in memory on 10.0.0.37:34804 (size: 4.3 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.37:34804 after 2 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_12 in memory on 10.0.0.31:39560 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TransportClientFactory: Successfully created connection to /10.0.0.31:39560 after 5 ms (0 ms spent in bootstraps)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 14) in 2016 ms on 10.0.0.34 (executor 7) (8/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_14 on 10.0.0.34:40719 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Added taskresult_23 in memory on 10.0.0.31:39560 (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 13) in 2037 ms on 10.0.0.23 (executor 5) (9/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_13 on 10.0.0.23:44777 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_12 on 10.0.0.31:39560 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 12) in 2075 ms on 10.0.0.31 (executor 10) (10/12)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 21) in 2081 ms on 10.0.0.37 (executor 6) (11/12)
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_21 on 10.0.0.37:34804 in memory (size: 4.3 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 23) in 2098 ms on 10.0.0.31 (executor 10) (12/12)
+17/11/02 17:07:35 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+17/11/02 17:07:35 INFO DAGScheduler: ResultStage 1 (collect at Word2Vec.scala:196) finished in 2.106 s
+17/11/02 17:07:35 INFO BlockManagerInfo: Removed taskresult_23 on 10.0.0.31:39560 in memory (size: 4.4 MB, free: 3.0 GB)
+17/11/02 17:07:35 INFO DAGScheduler: Job 0 finished: collect at Word2Vec.scala:196, took 8.648423 s
+17/11/02 17:07:36 INFO Word2Vec: vocabSize = 130350, trainWordsCount = 19271118
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.9 KB, free 3.0 GB)
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.0 KB, free 3.0 GB)
+17/11/02 17:07:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.0.5:45247 (size: 4.0 KB, free: 3.0 GB)
+17/11/02 17:07:36 INFO SparkContext: Created broadcast 3 from broadcast at Word2Vec.scala:315
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 62.3 MB, free 3.0 GB)
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.0 MB, free 3.0 GB)
+17/11/02 17:07:36 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_4_piece1 stored as bytes in memory (estimated size 4.0 MB, free 3.0 GB)
+17/11/02 17:07:36 INFO BlockManagerInfo: Added broadcast_4_piece1 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:36 INFO SparkContext: Created broadcast 4 from broadcast at Word2Vec.scala:316
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 16.1 MB, free 2.9 GB)
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:36 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:36 INFO MemoryStore: Block broadcast_5_piece1 stored as bytes in memory (estimated size 215.9 KB, free 2.9 GB)
+17/11/02 17:07:36 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.5:45247 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:36 INFO SparkContext: Created broadcast 5 from broadcast at Word2Vec.scala:317
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 49.7 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece1 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece1 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece2 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece2 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece3 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece3 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece4 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece4 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece5 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece5 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece6 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece6 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece7 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece7 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece8 stored as bytes in memory (estimated size 4.0 MB, free 2.9 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece8 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece9 stored as bytes in memory (estimated size 4.0 MB, free 2.8 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece9 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece10 stored as bytes in memory (estimated size 4.0 MB, free 2.8 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece10 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece11 stored as bytes in memory (estimated size 4.0 MB, free 2.8 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece11 in memory on 10.0.0.5:45247 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_6_piece12 stored as bytes in memory (estimated size 1798.7 KB, free 2.8 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_6_piece12 in memory on 10.0.0.5:45247 (size: 1798.7 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO SparkContext: Created broadcast 6 from broadcast at Word2Vec.scala:359
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 49.7 MB, free 2.8 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 248.7 KB, free 2.8 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.0.0.5:45247 (size: 248.7 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO SparkContext: Created broadcast 7 from broadcast at Word2Vec.scala:360
+17/11/02 17:07:37 INFO SparkContext: Starting job: collect at Word2Vec.scala:438
+17/11/02 17:07:37 INFO DAGScheduler: Registering RDD 9 (repartition at Word2Vec.scala:344)
+17/11/02 17:07:37 INFO DAGScheduler: Registering RDD 13 (mapPartitionsWithIndex at Word2Vec.scala:361)
+17/11/02 17:07:37 INFO DAGScheduler: Got job 1 (collect at Word2Vec.scala:438) with 1 output partitions
+17/11/02 17:07:37 INFO DAGScheduler: Final stage: ResultStage 4 (collect at Word2Vec.scala:438)
+17/11/02 17:07:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+17/11/02 17:07:37 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+17/11/02 17:07:37 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[9] at repartition at Word2Vec.scala:344), which has no missing parents
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 6.0 KB, free 2.8 GB)
+17/11/02 17:07:37 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 3.3 KB, free 2.8 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.5:45247 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1006
+17/11/02 17:07:37 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[9] at repartition at Word2Vec.scala:344) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+17/11/02 17:07:37 INFO TaskSchedulerImpl: Adding task set 2.0 with 12 tasks
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 24, 10.0.0.19, executor 9, partition 0, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 25, 10.0.0.36, executor 2, partition 1, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 26, 10.0.0.23, executor 5, partition 2, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 27, 10.0.0.28, executor 1, partition 3, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 4.0 in stage 2.0 (TID 28, 10.0.0.34, executor 7, partition 4, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 5.0 in stage 2.0 (TID 29, 10.0.0.32, executor 3, partition 5, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 6.0 in stage 2.0 (TID 30, 10.0.0.21, executor 8, partition 6, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 7.0 in stage 2.0 (TID 31, 10.0.0.37, executor 6, partition 7, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 8.0 in stage 2.0 (TID 32, 10.0.0.31, executor 10, partition 8, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 9.0 in stage 2.0 (TID 33, 10.0.0.13, executor 0, partition 9, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 10.0 in stage 2.0 (TID 34, 10.0.0.22, executor 4, partition 10, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO TaskSetManager: Starting task 11.0 in stage 2.0 (TID 35, 10.0.0.19, executor 9, partition 11, ANY, 4874 bytes)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.21:39031 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.19:45319 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.36:45956 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.32:42431 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.22:34464 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.28:38563 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.13:45568 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.23:44777 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.34:40719 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.37:34804 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.0.0.31:39560 (size: 3.3 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.21:39031 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.28:38563 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.36:45956 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.22:34464 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.32:42431 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.34:40719 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.13:45568 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.21:39031 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.13:45568 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.36:45956 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.19:45319 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.23:44777 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.22:34464 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.28:38563 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.32:42431 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.37:34804 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.34:40719 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.23:44777 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.37:34804 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.0.31:39560 (size: 4.0 MB, free: 3.0 GB)
+17/11/02 17:07:37 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 10.0.0.31:39560 (size: 215.9 KB, free: 3.0 GB)
+17/11/02 17:07:38 INFO TaskSetManager: Finished task 11.0 in stage 2.0 (TID 35) in 908 ms on 10.0.0.19 (executor 9) (1/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 25) in 2585 ms on 10.0.0.36 (executor 2) (2/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 6.0 in stage 2.0 (TID 30) in 2598 ms on 10.0.0.21 (executor 8) (3/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 24) in 2663 ms on 10.0.0.19 (executor 9) (4/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 9.0 in stage 2.0 (TID 33) in 2765 ms on 10.0.0.13 (executor 0) (5/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 10.0 in stage 2.0 (TID 34) in 2836 ms on 10.0.0.22 (executor 4) (6/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 5.0 in stage 2.0 (TID 29) in 2855 ms on 10.0.0.32 (executor 3) (7/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 26) in 2973 ms on 10.0.0.23 (executor 5) (8/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 4.0 in stage 2.0 (TID 28) in 3131 ms on 10.0.0.34 (executor 7) (9/12)
+17/11/02 17:07:40 INFO TaskSetManager: Finished task 7.0 in stage 2.0 (TID 31) in 3161 ms on 10.0.0.37 (executor 6) (10/12)
+17/11/02 17:07:41 INFO TaskSetManager: Finished task 8.0 in stage 2.0 (TID 32) in 3394 ms on 10.0.0.31 (executor 10) (11/12)
+17/11/02 17:07:41 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 27) in 3420 ms on 10.0.0.28 (executor 1) (12/12)
+17/11/02 17:07:41 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+17/11/02 17:07:41 INFO DAGScheduler: ShuffleMapStage 2 (repartition at Word2Vec.scala:344) finished in 3.422 s
+17/11/02 17:07:41 INFO DAGScheduler: looking for newly runnable stages
+17/11/02 17:07:41 INFO DAGScheduler: running: Set()
+17/11/02 17:07:41 INFO DAGScheduler: waiting: Set(ShuffleMapStage 3, ResultStage 4)
+17/11/02 17:07:41 INFO DAGScheduler: failed: Set()
+17/11/02 17:07:41 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[13] at mapPartitionsWithIndex at Word2Vec.scala:361), which has no missing parents
+17/11/02 17:07:41 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 6.3 KB, free 2.8 GB)
+17/11/02 17:07:41 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.4 KB, free 2.8 GB)
+17/11/02 17:07:41 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.0.0.5:45247 (size: 3.4 KB, free: 3.0 GB)
+17/11/02 17:07:41 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1006
+17/11/02 17:07:41 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[13] at mapPartitionsWithIndex at Word2Vec.scala:361) (first 15 tasks are for partitions Vector(0))
+17/11/02 17:07:41 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+17/11/02 17:07:41 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 36, 10.0.0.19, executor 9, partition 0, PROCESS_LOCAL, 4890 bytes)
+17/11/02 17:07:41 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.0.0.19:45319 (size: 3.4 KB, free: 3.0 GB)
+17/11/02 17:07:41 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 10.0.0.19:54600
+17/11/02 17:07:41 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 262 bytes
+17/11/02 17:07:42 INFO BlockManagerInfo: Added rdd_12_0 in memory on 10.0.0.19:45319 (size: 146.7 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece4 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece6 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece8 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece5 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece9 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.9 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece3 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece10 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece12 in memory on 10.0.0.19:45319 (size: 1798.7 KB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece7 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece11 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece2 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_6_piece1 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.0.0.19:45319 (size: 248.7 KB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_4_piece1 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.0.19:45319 (size: 4.0 MB, free: 2.8 GB)
+17/11/02 17:07:42 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.0.19:45319 (size: 4.0 KB, free: 2.8 GB)

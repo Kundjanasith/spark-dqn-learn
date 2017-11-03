@@ -1,3 +1,12 @@
+ssw1-sea-worker-3.novalocal
+ssw1-sea-worker-6.novalocal
+ssw1-sea-worker-9.novalocal
+ssw1-sea-worker-4.novalocal
+ssw1-sea-worker-2.novalocal
 ssw1-sea-core-0.novalocal
 ssw1-sea-master-0.novalocal
+ssw1-sea-worker-5.novalocal
 ssw1-sea-worker-0.novalocal
+ssw1-sea-worker-8.novalocal
+ssw1-sea-worker-7.novalocal
+ssw1-sea-worker-1.novalocal
